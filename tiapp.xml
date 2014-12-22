@@ -2,7 +2,7 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <id>nu.lukic.RippleEffect</id>
     <name>Ti.RippleEffect</name>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <publisher>Lukic</publisher>
     <url>http://</url>
     <description/>
