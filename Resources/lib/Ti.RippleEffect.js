@@ -1,9 +1,9 @@
 function create(e){
     // Width and Height of our clicked view.
     // This way we can make the circle big enough to fit the view.
-    var rippleWidth = e.source.width*2;
-    var rippleHeight = e.source.width*2;
- 
+    var rippleWidth = e.source.toImage().width*2;
+    var rippleHeight = e.source.toImage().width*2;
+
     // Our circle that will be scaled up using 2dMartix.
     // We'll position the view at the center of the click position, by using (clickPositin - (clickedViewWidth / 2)).
     var ripple = Ti.UI.createView({
