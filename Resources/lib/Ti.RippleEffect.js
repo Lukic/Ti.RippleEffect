@@ -1,4 +1,4 @@
-function create(e){
+function create(e, callback){
     // Width and Height of our clicked view.
     // This way we can make the circle big enough to fit the view.
     var rippleWidth = e.source.toImage().width*2;
@@ -40,6 +40,8 @@ function create(e){
                     // At the end we'll remove our ripple view from the clicked view.
                     e.source.remove(ripple);
                     ripple=null;
+                    if(callback)
+                        callback();
                 });
         });
 };
